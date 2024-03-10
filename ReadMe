@@ -1,5 +1,23 @@
+https://www.examtopics.com/exams/google/associate-cloud-engineer/view/1/
+
+https://dataflow.spring.io/getting-started/
+
+https://cloud.google.com/dataflow/docs/quickstarts/create-pipeline-python
+
+https://cloud.google.com/dataflow/docs/quickstarts/create-pipeline-java
+
+
 mvn clean install
 mvn clean package
 
 mvn clean install -Dmaven.test.skip=true
 mvn clean package -Dmaven.test.skip=true
+
+mvn compile exec:java -Dexec.mainClass=com.threeidiots.demo.WriteToFile
+mvn compile exec:java -Dexec.mainClass=com.threeidiots.demo.WriteToFile -Dexec.args="--ouput=/home/ajith/Me/Learn/test"
+
+mvn compile exec:java -Dexec.mainClass=com.threeidiots.demo.TransformAndWriteToFile
+
+mvn compile exec:java -Dexec.mainClass=com.threeidiots.demo.MarkSheet
+mvn compile exec:java -Dexec.mainClass=com.threeidiots.demo.MarksheetWithGrade
+
